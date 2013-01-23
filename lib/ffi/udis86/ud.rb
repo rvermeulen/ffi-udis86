@@ -50,7 +50,11 @@ module FFI
              :c3, :uint8,
              :inp_cache, [NativeType::UINT8, 256],
              :inp_sess, [NativeType::UINT8, 64],
+             :have_modrm, :uint8,
+             :modrm, :uint8,
+             :user_opaque_data, :pointer
              :itab_entry, :pointer
+             :le, :pointer
 
       #
       # Creates a new disassembler object.
